@@ -1,0 +1,85 @@
+.low-stock-container {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9; /* Background color for the main container */
+}
+
+
+
+.table-container {
+  margin-top: 20px;
+  width: 100%; /* Ensure the table is responsive */
+}
+
+/* Style for the table heading */
+.table-header {
+  background-color: #1976d2; /* Blue background for table heading */
+  color: white !important; /* White text in table heading */
+  text-align: left;
+  padding: 10px;
+}
+
+/* Style for the table body */
+.table tbody td {
+  color: #1976d2; /* Blue text color for table body */
+  padding: 10px;
+}
+
+/* Make the table responsive */
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto; /* Allow horizontal scroll on smaller screens */
+  }
+
+  .table {
+    width: 100%;
+    display: block; /* Ensure the table takes up full width */
+  }
+
+  .table thead,
+  .table tbody,
+  .table th,
+  .table td,
+  .table tr {
+    display: block; /* Stack the table elements on smaller screens */
+  }
+
+  .table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .table td {
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  .table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+  }
+  .topsellingBody{
+    margin-left: 0px !important;
+    justify-content: center;
+  }
+}
+.topSellingBody{
+  margin-left: 252px ;
+  margin-right: 5px;
+}
+.page-title {
+  text-align: center;
+  color: #fff !important; /* White text color */
+  background-color: #007bff; /* Blue background for the title */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}

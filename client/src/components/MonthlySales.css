@@ -1,0 +1,42 @@
+.monthly-sales-container {
+    padding: 20px;
+    background-color: #f4f7fc;
+    border-radius: 8px;
+    
+  }
+ .monthly-sales{
+  margin-left: 250px;
+ } 
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .page-title {
+    text-align: center;
+    color: #fff !important; /* White text color */
+    background-color: #007bff; /* Blue background for the title */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .chart-container1 {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .chart-container {
+      padding: 10px;
+    }
+    .monthly-sales{
+      margin-left: 0px !important;
+     } 
+  }
+  

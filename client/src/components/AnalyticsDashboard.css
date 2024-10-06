@@ -1,0 +1,150 @@
+/* AnalyticsDashboard.css */
+
+/* Flexbox layout for sidebar and main content */
+.analytics-dashboard {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content {
+  flex-grow: 1;
+  margin-left: 250px !important; /* Sidebar width */
+  padding: 1rem;
+  transition: margin-left 0.3s ease;
+}
+
+/* Back arrow button */
+.back-arrow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-arrow:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* General styling for the dashboard */
+.analytics-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.analytics-item {
+  position: relative;
+}
+
+.analytics-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Adjust padding */
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 200px; /* Ensure buttons have a minimum width */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.analytics-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.analytics-btn.active {
+  background-color: #0056b3;
+}
+
+/* Icon styling */
+.icon {
+  font-size: 24px; /* Adjust icon size */
+}
+
+/* Dropdown styling */
+.dropdown {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  display: none;
+}
+
+.analytics-item .dropdown {
+  display: block; /* Show dropdown if active */
+}
+
+.dropdown p {
+  margin: 0;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.dropdown p:hover {
+  background-color: #d4d4d4;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Medium screens */
+  .back-arrow {
+    font-size: 20px; /* Adjust font size */
+    padding: 8px;
+  }
+
+  .analytics-btn {
+    font-size: 14px; /* Adjust font size */
+    padding: 10px 20px; /* Adjust padding */
+    min-width: 150px; /* Adjust min-width */
+  }
+}
+
+@media (max-width: 768px) { /* Small screens */
+  .main-content {
+    margin-left: 0; /* No margin for mobile view */
+  }
+
+  .analytics-buttons {
+    flex-direction: column;
+    align-items: center; /* Center buttons */
+  }
+
+  .analytics-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px; /* Adjust padding */
+    min-width: unset; /* Remove min-width constraint */
+  }
+
+  .dropdown {
+    width: 100%;
+    position: static; /* Change to static for mobile view */
+    display: block; /* Ensure dropdown is shown when active */
+  }
+}

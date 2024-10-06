@@ -1,0 +1,58 @@
+/* PromotionsSection.css */
+
+.promotions {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f7f7f7; /* Light background color */
+  }
+  
+  .promotions h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .promotion-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../public/Assets/summersale.jpg'); /* Replace with your own image */
+    background-size: cover; /* Cover the entire banner while filling the width */
+    background-repeat: no-repeat; /* Prevent tiling of the image */
+    background-position: center; /* Center the image */
+    width: 100%; /* Make sure the width spans the entire container */
+    height: 500px; /* Keep the height at 500px */
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  
+  
+  .promo-details {
+    position: relative;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional overlay for text contrast */
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .promo-details h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff5a45;
+  }
+  

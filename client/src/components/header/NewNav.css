@@ -1,0 +1,150 @@
+/* Basic styles for the navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #007bff; /* Navbar background color */
+  position: relative; /* Position relative for absolute positioning of the mobile menu */
+}
+
+/* Logo section */
+.navbar-logo .logo {
+  height: 40px; /* Adjust size as needed */
+}
+
+.logodiv {
+  display: flex;
+  align-items: center;
+}
+
+.logohead {
+  margin-left: 10px;
+  color: yellow;
+}
+
+/* Search bar in the center */
+.navbar-search {
+  flex-grow: 1; /* Allow search bar to grow and center itself */
+  max-width: 400px; /* Maximum width of the search bar */
+  margin: 0 20px; /* Margin to provide spacing from other elements */
+}
+
+.navbar-search input {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute; /* Position absolute for top left alignment */
+  top: 25px; /* Distance from the top */
+  left: 30px; /* Distance from the left */
+}
+
+.hamburger-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+/* Links and user profile on the right */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between links */
+}
+
+.navbar-links .btn {
+  background: none;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-user img {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%; /* Make the image circular */
+}
+
+/* Mobile menu styles */
+.navbar-links.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px; /* Adjust based on navbar height */
+  left: 0;
+  width: 100%;
+  background-color: #007bff; /* Match navbar background color */
+  gap: 10px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-search {
+    max-width: 100%; /* Full width on smaller screens */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .navbar-search input {
+    padding: 10px;
+    font-size: 16px; /* Adjust font size for better readability on small screens */
+  }
+
+  .navbar-links {
+    display: none; /* Hide links by default */
+  }
+
+  .hamburger-icon {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 5px 10px; /* Reduce padding for very small screens */
+  }
+
+  .navbar-logo .logo {
+    height: 30px; /* Adjust logo size */
+  }
+
+  .logohead {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .navbar-search {
+    margin: 5px 0; /* Adjust margin for smaller screens */
+  }
+
+  .navbar-search input {
+    padding: 8px;
+    font-size: 14px; /* Further adjust font size for very small screens */
+  }
+
+  .navbar-links .btn {
+    font-size: 16px; /* Adjust button font size for smaller screens */
+  }
+
+  .navbar-user img {
+    height: 35px;
+    width: 35px; /* Adjust user image size */
+  }
+}

@@ -1,0 +1,54 @@
+.messages-table-container {
+    padding: 20px;
+  }
+  
+  .messages-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .messages-table th, .messages-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .messages-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .messages-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+ 
+  /* MessagesTable.css */
+.response-tick {
+    font-size: 24px; /* Adjust size as needed */
+    color: #28a745; /* Dark green color for the checkmark */
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    transition: color 0.3s;
+  }
+  
+  .response-tick:hover {
+    color: #218838; /* Slightly darker green on hover */
+  }
+  .messages-table-wrapper {
+    display: flex;
+  }
+  
+  .messages-table-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px; /* Adjust according to the width of NewNav2 */
+    width: calc(100% - 250px); /* Adjust to fit the remaining width */
+  }
+  
+  @media (max-width: 1024px) {
+    .messages-table-content {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  

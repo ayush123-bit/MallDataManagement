@@ -1,0 +1,52 @@
+/* StockManagementPage.css */
+
+/* Flexbox layout for sidebar and main content */
+.stock-management-page {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Main content area */
+.main-content {
+  flex-grow: 1;
+  margin-left: 250px; /* Sidebar width */
+  padding: 1rem;
+  transition: margin-left 0.3s ease;
+}
+
+/* Make sure the content adjusts when the sidebar is hidden on mobile */
+@media (max-width: 768px) {
+  .stock-management-page {
+    flex-direction: column;
+  }
+
+  .main-content {
+    margin-left: 0; /* No margin for mobile view */
+  }
+}
+
+/* Adjust sidebar for small screens */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+/* Additional styling for the Paper component */
+.stock-management-container {
+  padding: 2rem;
+  max-width: 100%; /* Ensure it doesn’t overflow on small screens */
+  box-sizing: border-box;
+}
+
+.page-title {
+  margin-bottom: 1rem;
+}
+
+.submit-button {
+  margin-top: 1rem;
+}
+
+.alert {
+  margin-top: 1rem;
+}

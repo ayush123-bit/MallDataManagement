@@ -1,0 +1,27 @@
+/* NewNav2.css */
+
+/* General styling for list items */
+.MuiListItem-root {
+  color:white; /* Set color of all links to blue */
+}
+
+/* Styling for active links */
+.MuiListItem-root.Mui-selected {
+  color: white; /* Set color of the active link to white */
+  background-color: #1976d2; /* Optional: Set a background color for the active link */
+}
+
+/* Optional: Remove default padding */
+.MuiListItem-root {
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Ensure text is visible */
+.MuiListItemText-primary {
+  color: inherit; /* Inherit color from the parent */
+}
+
+/* Optional: Add hover effects */
+.MuiListItem-root:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background color on hover */
+}

@@ -1,0 +1,38 @@
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .cart-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .cart-details {
+    padding: 15px;
+  }
+  
+  .order-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .order-button:hover {
+    background-color: #0056b3;
+  }
+  
